@@ -7,7 +7,7 @@ The subproblem could be thought of as number of ways decoding a substring.
 
 The above diagram shows string "326" could be decoded in two ways.
 
-### Approach 1: Recursive Approach with Memoization
+## Approach 1: Recursive Approach with Memoization
 
 The problem deals with finding number of ways of decoding a string. What helps to crack the problem is to think why there would be many ways to decode a string. The reason is simple since at any given point we either decode using ```two digits``` or ```single digit```. This choice while decoding can lead to different combinations.
 
