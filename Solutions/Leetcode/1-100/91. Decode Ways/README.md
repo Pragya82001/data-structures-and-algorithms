@@ -21,7 +21,7 @@ In the following diagram we can see how the paths have to deal with similar subp
 
 ![img_3.png](img_3.png)
 
-#### Algorithm
+### Algorithm
 
 1. Enter recursion with the given string i.e. start with index 0.
 
@@ -70,3 +70,9 @@ for _ in range(T):
     print(ans)
 
 ```
+### Complexity Analysis
+
+**Time Complexity**: ```O(N)```, where N is length of the string. Memoization helps in pruning the recursion tree and hence decoding for an index only once. Thus this solution is linear time complexity.
+
+**Space Complexity**: ```O(N)```. The dictionary used for memoization would take the space equal to the length of the string. There would be an entry for each index value. The recursion stack would also be equal to the length of the string.
+
