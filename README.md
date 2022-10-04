@@ -10,10 +10,11 @@ Suppose a ❔problem is to find whether a pair (X, Y) exists in an array, A of N
 
 The _pseudo-code_ is as follows:
 
+```
 int a[n];
 for(int i = 0;i < n;i++)
   cin >> a[i]
-  
+
 
 for(int i = 0;i < n;i++)
   for(int j = 0;j < n;j++)
@@ -21,9 +22,10 @@ for(int i = 0;i < n;i++)
        return true
 
 return false
+```
 
 **Python Code of the above _pseudo-code_**
-
+```python
 def findPair(a, n, z) :
      
     # Iterate through all the pairs
@@ -49,7 +51,7 @@ if (findPair(a, n, z)) :
     print("True")
 else :
     print("False")
-    
+```    
 ## 🥡OUTPUT - False
 
 _Assuming that each of the operations in the computer takes approximately constant time, let it be c. The number of lines of code executed actually depends on the value of Z. During analyses of the algorithm, mostly the worst-case scenario is considered, i.e., when there is no pair of elements with sum equals Z. In the worst case, 
@@ -71,7 +73,7 @@ Order of growth is how the time of execution depends on the length of the input.
 Suppose a ❓problem to 👓find the frequency of array elements.
 
 The _pseudo-code_ is as follows: 
-
+```
 int freq[n];
 int a[n];
 
@@ -80,9 +82,9 @@ for(int i = 0; i<n; i++)
    cin>>a[i];
    freq[a[i]]++;
 }  
-
+```
 **Python Code of the above _pseudo-code_**
-
+```python
 def countFreq(arr, n):
     freq = dict()
      
@@ -100,6 +102,7 @@ def countFreq(arr, n):
 arr =  [10, 20, 20, 10, 10, 20, 5, 20 ]
 n = len(arr)
 countFreq(arr, n)
+```
 
 ## 🥡OUTPUT - 
               5 1
@@ -116,12 +119,13 @@ _Let's take an example and analyze the time-complexity in detail_
 
 <!-- Compute the maximum element in the array a -->
 Algorithm max(a):
+```
     max ← a[0]
     for i = 1 to len(a)-1
         if a[i] > max
             max ← a[i]
     return max
-    
+```
 *The answer depends on factors such as input, programming language and runtime, coding skill, compiler, operating system, and hardware.
 
 *We often want to reason about execution time in a way that depends only on the algorithm and its input. This can be achieved by choosing an elementary operation, which the algorithm performs repeatedly, and define the time complexity T(n) as the number of such operations the algorithm performs given an array of length n.
@@ -150,6 +154,7 @@ The time complexity, measured in the number of comparisons, then becomes T(n) = 
 Let's take an example:
 
     #Sum Of N Natural Number
+    ```
     int sum(int n)
     {
      int i,sum=0;
@@ -157,12 +162,13 @@ Let's take an example:
      sum=sum+i
      return sum;
     }
+    ```
 So in the above example input value is 'n' that is constant which will take the space of **O(1)**. Now what about auxiliary space, so it is also O(1) becuase 'i' and 'sum' are also constants.
 **Hence total space complexity is O(1).**
 
 Let's take another example:
 _Sum of all elements in an array_
-
+  ```
   function sum_of_numbers(arr[],N){
       sum=0
       for(i = 0 to N){
@@ -170,6 +176,7 @@ _Sum of all elements in an array_
       }
       print(sum)
   }
+  ```
 So here this time there is an algorithm to find the sum of all elements in the array. For that we are passing the array(arr[ ]) and the size of array(N) to the created function. So here,
 
 *In array(arr) the size of array is "N" and each element will take "4bytes" so the space taken by "arr" will be "N * 4 bytes"
