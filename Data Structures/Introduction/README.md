@@ -1,6 +1,6 @@
 # What is Data Structure
 Data structure is a particular way of storing and organizing a data in a computer so that it 
-can can be used efficiently. A data structure is a special format for organizing and storing 
+can be used efficiently. A data structure is a special format for organizing and storing 
 data. General data structure types include ```arrays, files, linked lists, stacks, queues, trees, 
 graphs``` and so on.
 
